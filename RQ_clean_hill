@@ -1,4 +1,5 @@
 ```javascript
+
 void finish()
   {
     while (!isOnB())                                //Here you are checking if you are on B.  If not, do the code below.
