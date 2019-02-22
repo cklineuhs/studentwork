@@ -1,5 +1,3 @@
-```processing
-
 void finish()
   {
     while (!isOnB())                                //Here you are checking if you are on B.  If not, do the code below.
@@ -28,6 +26,3 @@ void finish()
       }
     }                                               //End of while loop.  Am I still not on B?  If so, go back to the top
   }                                                 //of the loop.  If I am on B, the method finishes.
-
-```
- 
