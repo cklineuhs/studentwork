@@ -29,11 +29,11 @@ void draw()
 	background(189, 186, 222);
 	fill(84, 237, 233);
 	ellipse(xPos, yPos, ballSize, ballSize);			// For code clarity, if you're drawing two animated shapes, you want them both
-														// drawn together.
+																								// drawn together.
 														
 	if (numBounce > 24 && numBounceYellow < 24)			// If you want it to run only while this is true, why not do
-	{													// an OR comparison to see if one of their bounce counts is 25.  If not,
-		xSpeed= 0;										// run the bounce commands. If one is, check which and display the win.
+	{																								// an OR comparison to see if one of their bounce counts is 25.  If not,
+		xSpeed= 0;																		// run the bounce commands. If one is, check which and display the win.
 		ySpeed= 0;
 		xPos=width/2 - 50;
 		yPos=height/2;
@@ -55,13 +55,13 @@ void draw()
 		yPos=height/2;
 	} 
 	else if (xPos > width - 17)											// Don't use 17.  You want to use ballSize/2 (like the
-	{																	// instructions say), because what if in a bigger project
-		xSpeed = -xSpeed;												// you change the ball size?  Then, you would need to go
-		numBounce++;													// and find every use of 17...
+	{																								// instructions say), because what if in a bigger project
+		xSpeed = -xSpeed;															// you change the ball size?  Then, you would need to go
+		numBounce++;																	// and find every use of 17...
 		println("Turquois has bounced " + numBounce + " times");
 		xSpeed= xSpeed * 1.2;
 		ySpeed= ySpeed * 1.2;											// Only change the speed of the direction it bounced.
-																		// If it bounced on the left or right, only change xSpeed
+																							// If it bounced on the left or right, only change xSpeed
 		
 		xPos= xPos + xSpeed;											// Also, don't mess with the positions here either.  You only
 		yPos= yPos + ySpeed;											// want that to be changed once, at the top
@@ -97,7 +97,7 @@ void draw()
 		yPos= yPos + ySpeed;
 	} 
 	else																// Get rid of this else entirely and put this movement change
-	{																	// above your boundary checks.
+	{																		// above your boundary checks.
 		xPos= xPos + xSpeed;
 		yPos= yPos + ySpeed;
 	}
