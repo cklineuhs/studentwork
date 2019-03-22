@@ -2,7 +2,7 @@ float xPos =0;											// x position of what?  You named the yellow one, why n
 float yPos = 0;											// Also, the y position, speeds, and bounce.
 int ballSize = 33;
 float xSpeed;
-float ySpeed;
+float ySpeed; 
 int numBounce = 0;
 
 float xPosYellow =0;
